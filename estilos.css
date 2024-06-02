@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.contenedor {
+    background-size: cover;
+    background-image: url('yojaskdsa.jpeg');
+    width: 90vw;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: #000;
+    font-size: 5vw;
+    padding: 10%;
+}
+
+button {
+    font-size: 2vw;
+    padding: 1em;
+}
+
+#yesBtn {
+    transform: translate(-50%, 0);
+}
+
+#noBtn {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.gato {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 95vw;
+        height: 70vh;
+    }
+
+    p {
+        font-size: 6vw;
+        padding: 8%;
+    }
+
+    button {
+        font-size: 3vw;
+        padding: 1em;
+    }
+
+    .gato {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 8vw;
+        padding: 5%;
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 0.75em;
+    }
+
+    .gato {
+        width: 80vw;
+    }
+}
